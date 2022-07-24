@@ -1,7 +1,7 @@
 //key-value pairs or associative array. Key can uint or int and will be mapped to any datatypes like boolean, string or address.
 //The keys should always be of elementary data types.
 //Values canbe of any data type.
-
+//accessed by name[key] = value
 pragma solidity ^0.5.0;
 
 contract uservar {
