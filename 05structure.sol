@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 contract uservaar {
-    struct customer {  //accessed by dot(".") operator
+    struct customer {  //A structure of primary datatypes. Accessed by dot(".") operator
         address add; 
         uint amt;
     } 
