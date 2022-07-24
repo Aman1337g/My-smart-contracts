@@ -98,3 +98,24 @@ Each method has its own scope, and the State variables should define outside of 
 ## Local Variable
  
 The context of a local variable is within the function, and it cannot be accessed outside. Usually, these variables are used to hold temporary values for processing or calculating something. “temp” in the upper screen is a local variable, which we cannot use outside of “addition” function.
+
+# Functions
+
+- Reading transaction = call , Writing transaction = trans
+- View - Reading from state, view and pure functions.
+- Pure - Not reading or modifying state, call only pure functions.
+- Constructor - called at the time of deployment.
+- Receive - For directly sending ether from an account to a smart contract.
+
+# Require, Assert and Revert 
+
+- Errors revert the state.
+- Revert and require can return an error string .
+- Require - returns remaining gas, used for validating user input 
+- Assert - consume all gas, used to validate invariants, terminates transaction.
+- Revert - reverts the transaction and returns gas.
+
+# Modifiers
+
+- Automatically check a pre-condition.
+- Change the behaviour of functions.
