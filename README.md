@@ -52,3 +52,49 @@ contract MyContract {
 }
 ```
 Read here in detail about [Smart Contracts](https://www.ibm.com/topics/smart-contracts).
+
+# Access Modifier
+ 
+Access Modifiers are the keywords used to specify the declared accessibility of a function or a type. There are four access modifiers available in Solidity.
+ 
+## Public
+ 
+The Public element can be inherited and can be accessed by external elements. All can access a public element. 
+ 
+## Private
+ 
+The Private element doesn’t get inherited and can't be accessed by external elements. It can be accessed from the current contract instance only. 
+ 
+## Internal
+ 
+The Internal element can be inherited but can’t be accessed by external elements. Only the base contract and derived contract can access internal element.
+ 
+## External
+ 
+The External element can’t be inherited but it can be accessed by external elements. Current contract instance can’t access external element, it can be accessed externally only.
+ 
+# Variable Declaration 
+ 
+Variable declaration in Solidity is a bit different; you have to specify the type (data type) first, followed with an access modifier, and the variable name. If you would not specify any access modifier, it will be considered as a private.  
+ 
+**Structure**
+```solidity
+<type> <access modifier> <variable name> ;  
+```
+**Example**
+```solidity
+uint public temp;
+```   
+There are mainly two types of variables available in Solidity - **State variables** and the **Local variables**. We consider them as Global variables and Local variables just as any other language. Though, there are some differences.
+ 
+## State variable
+ 
+State variables store the value permanently in the contract storage. Consider that you’re using C# or other languages and you want to store user information for a long time, what would you do? Connect your application with a database server and then save that information to the DB. However, in Solidity, no need to make a connection, you can easily store your data permanently with just the use of state variables. 
+ 
+Each method has its own scope, and the State variables should define outside of the scope of any defined functions.
+ 
+![State variables and Local variables in Solidity](variables.png)
+
+## Local Variable
+ 
+The context of a local variable is within the function, and it cannot be accessed outside. Usually, these variables are used to hold temporary values for processing or calculating something. “temp” in the upper screen is a local variable, which we cannot use outside of “addition” function.
