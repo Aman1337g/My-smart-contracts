@@ -45,20 +45,10 @@ They are nothing but programs or applications stored on decentralized blockchain
 Here’s a simple smart contract code is written in Solidity:
 
 ```solidity
-contract Inbox {
-    string public message;
- 
-    function Inbox(string initialMessage) public {
-        message = initialMessage;
-    }
- 
-    function setMessage(string newMessage) public {
-        message = newMessage;
-    }
- 
-    function getMessage() public view returns (string) {
-        return message;
-    }
+pragma solidity ^0.5.0; //(PRE-COMPILER LINE)this compiler will be selected and "^" is for upward compatibility
+
+contract MyContract {
+    string public myString = "Hello World"; // visibiltiy = public here
 }
 ```
 Read here in detail about [Smart Contracts](https://www.ibm.com/topics/smart-contracts).
