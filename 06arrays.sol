@@ -1,3 +1,7 @@
+//DT[n] = fixed size array
+//DT[] = dynamic size array
+//DT[][7] = 7 dynamic sized array (means array contains 7 arrays of dynamic size)
+
 pragma solidity 0.6.0;
 
 contract uservar {
