@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 contract addr {
-    address public myAdd; // Two important functions of address variable - 1.For sending funds 2.For account balances
+    address public myAdd; // Two important functions of address variable - 1.For sending funds 2.For account balances. It holds 20 bytes.
     ufixed128x18 public myfix; //for fix point numbers - used for decimal numbers. Not applied on Blockchain.
     constructor() public {
         myAdd = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; //for initializing myAdd(account) otherwise initialised with 0x0000000000000000000000000000000000000000
