@@ -119,3 +119,29 @@ The context of a local variable is within the function, and it cannot be accesse
 
 - Automatically check a pre-condition.
 - Change the behaviour of functions.
+
+# Important Properties 
+
+- msg.sender - address of account calling the function
+- msg.value - amount of ether sent by the caller of the function (gives amount in wei, 1 ether = 10^18 wei)
+- now - the timestamp currently ([Epoch time](https://www.epochconverter.com/) - 10 digit number, every seconds add 1 to it, started from 1 Jan 1970)
+- selfdestruct(address); The Smart contract state won't be there anymore.
+
+> If you send a transaction or funds to a self-destructed contract you will lose your funds.
+
+# Inheritance
+
+<!-- It is basically reusing of code. Private functions cannot be inherited. -->
+- Using "**is**" keyword 
+- Inherited contracts are deployed as a single contract, not seperate ones.
+- Reusing of code. For example - 
+    Contract A{}
+    contract B **is** A{}
+
+# Importing of Files
+
+<!-- 4 ways of importing files -->
+- Global level : import "filename"
+- Import all members of a file : import* **as** symName from "filename";
+- Import specific members fo a file : import{symbol1 as alias} from "filename"
+- import from github : example - import "https://github.com/OpenZepplin/openzepplin-contracts/access/Ownable.sol";
