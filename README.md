@@ -144,4 +144,4 @@ The context of a local variable is within the function, and it cannot be accesse
 - Global level : import "filename"
 - Import all members of a file : import* **as** symName from "filename";
 - Import specific members fo a file : import{symbol1 as alias} from "filename"
-- import from github : example - import "https://github.com/OpenZepplin/openzepplin-contracts/access/Ownable.sol";
+- import from github : example - import "https://github.com/Normalities/OpenZepplin-contracts/blob/master/contracts/access/Ownable.sol";
