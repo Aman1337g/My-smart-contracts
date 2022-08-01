@@ -32,7 +32,7 @@ contract wallet() {    // Created a Contract named wallet
     // as we are not going inside the contract just returning value we are using pure function
     retrun amtinwei/1 ether;   //here 1 ether = 10^18 wei
     }
-    function withdraw(uint _amt)public {
+    function withdraw(uint _amt)public {   // withdraw function so that user can only withdraw from his account
         require(Balance_record[msg.sender].totbal >= _amt, "not enought funds");
         Balance_record[msg.sender].totbal -= _amt;
         msg.sender.transfer(_amt);
