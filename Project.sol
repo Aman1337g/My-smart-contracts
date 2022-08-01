@@ -27,4 +27,14 @@ contract wallet() {    // Created a Contract named wallet
         // returns is used in the function header and return is used in the function body
         retrun Balance_record[msg.sender].totbal;
     }     
-}
+    function convert(uint amtinwei)public pure returns(uint) { 
+    // function to convert input amount in wei to ether
+    // as we are not going inside the contract just returning value we are using pure function
+    retrun amtinwei/1 ether;   //here 1 ether = 10^18 wei
+    }
+    function withdraw(uint _amt)public {
+        require(Balance_record[msg.sender].totbal >= _amt, "not enought funds");
+        Balance_record[msg.sender].totbal -= _amt;
+        msg.sender.transfer(_amt);
+    }
+} 
