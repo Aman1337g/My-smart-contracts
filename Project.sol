@@ -56,5 +56,6 @@ contract wallet {    // Created a Contract named wallet
     // the person who is ending the smart contract and getting money is called an ender
     selfdestruct(ender);
     // selfdestruct is predefined function in solidity
+    // after pressing the destroy button smart contract will be destroyed but the blockchain will be there for always so if you send some funds in the blockchain it will be gone forever
     }
-}                                   
+}                                
