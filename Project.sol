@@ -58,4 +58,3 @@ contract wallet {    // Created a Contract named wallet
     // selfdestruct is predefined function in solidity
     }
 }                                   
-             
