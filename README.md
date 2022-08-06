@@ -171,3 +171,14 @@ Return values, trigger functionality and cheap storage
 - web3-shh is for the whisper protocol, to communicate p2p and broadcast.
 - web3-bzz is for the swarm protcol, the decentralized file storage.
 - web3-utils contains useful helper functions for Dapp(decentralized application) developers.
+
+> INSTALLING WEB3<br>
+> Install node<br>
+> Npm install -g web3<br>
+> npm i ganache-cli
+
+# GANACHE
+
+- Ganache is a personal blockchain for rapid Ethereum distributed application development. You can use Ganache across the entire deveopment cycle; enabling you to develop, deploy, and test your dApps in a safe and deterministic environment.
+- Ganache UI is desktop application supporting Ethereum technology. In addition, an Ethereum version of ganache is available as a command -line tool: ganache-cli (formerly known as the TestRPC).
+- All versions of Ganache are available for Windows, Mac, and Linux.
