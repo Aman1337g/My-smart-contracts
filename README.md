@@ -151,7 +151,8 @@ The context of a local variable is within the function, and it cannot be accesse
 - EVM has a logging functionality
 - Events : inform external users that some action has happened.
 ```solidity
-eventmyEvent(DT1arg1, address indexed arg2);
+eventmyEvent(DT1arg1, address indexed arg2);  
+// The indexed parameters for logged events will allow to search for these events using the indexed parameters as filters.
 emit myEvent(amt, address);
 ```
 Return values, trigger functionality and cheap storage
