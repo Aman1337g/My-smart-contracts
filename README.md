@@ -154,6 +154,7 @@ The context of a local variable is within the function, and it cannot be accesse
 eventmyEvent(DT1arg1, address indexed arg2);  
 // The indexed parameters for logged events will allow to search for these events using the indexed parameters as filters.
 emit myEvent(amt, address);
+// by emit the client gets to know that some changes have been made
 ```
 Return values, trigger functionality and cheap storage
 - Data storage : off-chain data storage or store in IPFS(InterPlanetary File System).
@@ -161,3 +162,12 @@ Return values, trigger functionality and cheap storage
 - Apps can subscribe and listen to these events through the RPC(Remote procedure call) inteface of an Ethereum client.
 > In distributed computing, a remote procedure call (RPC) is when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is coded as if it were a normal (local) procedure call, without the programmer explicitly coding the details for the remote interaction.
 - Not accessible from within contracts.
+
+# WEB3.JS
+
+- The web3, js library is a collection of modules that contain functionality for the ethereum  ecosystem.
+- It is a javascript library which is isomorphic(use it for both front-end and back-end).
+- web3-eth is for the ethereum blockchian and smart contracts. 
+- web3-shh is for the whisper protocol, to communicate p2p and broadcast.
+- web3-bzz is for the swarm protcol, the decentralized file storage.
+- web3-utils contains useful helper functions for Dapp(decentralized application) developers.
